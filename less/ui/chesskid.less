@@ -1,0 +1,145 @@
+/* global vars */
+@import "global.less";
+
+/* import custom fonts */
+@import "fonts.less";
+
+/* import icons */
+@import "icons.less";
+
+
+body {
+  
+  background: url("@{image_path}/background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+}
+
+html, body{
+  height:100%; /* needed for container min-height */
+}
+
+/* use custom font */
+.lucky-text{
+  font-family: 'LuckiestGuy';
+  -webkit-font-smoothing: antialiased;
+}
+
+.gray-text{
+  color: #767471;
+}
+.black-text{
+  color: #32302D;
+}
+
+.right-text{
+  text-align: right;
+}
+
+
+/* header navigation */
+.header{
+  
+  margin: 15px 0px;
+  /* logo on navigation */
+  .logo{
+    
+    float: left;
+    
+    img{
+      width: 226px;
+    }
+  }
+  
+  /* links on navigation */
+  ul{ 
+    
+    list-style: none;
+    float: right;
+    margin: 0px;
+    padding: 0px;
+    li{
+      
+      display: inline-block;
+      vertical-align: top;
+      color: #FFF;
+      font-size: 26px;
+      line-height: 48px;
+      margin-top: 22px;
+      padding: 0px;
+      text-shadow: 1px 1px 1px #60913F, 
+                  -1px -1px 1px #60913F;
+      .lucky-text;
+      
+      &:hover{
+        cursor:  pointer;
+      }
+    }
+  }
+}
+
+/* content */
+.content{
+  
+  background: #FFF;
+  border-radius: 32px;
+  box-shadow: 0px 0px 5px #60913F;
+  padding: 20px 50px;
+  font-size: 16px;
+  .gray-text;
+}
+
+.lesson{
+  
+  .details{
+    
+    .title{
+      .black-text;
+    }
+    p,
+    .statistics{
+      margin: 20px 0px;
+    }
+    .total{
+      font-size: 24px;
+      .lucky-text;
+      .black-text;
+    }
+    .btn{
+      width: 100%;
+    }
+    .artwork{
+      text-align: center;
+      margin-top: 20px;
+    }
+  }
+  
+  .box{
+    
+    background: #F1F1F2;  
+    margin-bottom: 30px;
+    text-align: center;
+    padding: 20px;
+    
+    .rounded(4px);
+    
+    .title{
+      font-size: 24px;
+    }
+  }
+  
+}
+
+
+/* buttons */
+.btn-primary{
+  background: #FF8A00;
+  border: 1px solid #E3770F;
+  box-shadow: 0px 1px 0px rgba(255,255,255,.3) inset;
+}
+.btn-xlg{
+  padding: 20px 30px 15px;
+  .lucky-text;
+  font-size: 32px;
+}
