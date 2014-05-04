@@ -17,7 +17,7 @@ body {
 }
 
 html, body{
-  height:100%; /* needed for container min-height */
+  min-height:100%; /* needed for container min-height */
 }
 
 /* use custom font */
@@ -31,6 +31,9 @@ html, body{
 }
 .black-text{
   color: #32302D;
+}
+.blue-text{
+  color: #007BB4;
 }
 
 .right-text{
@@ -87,6 +90,7 @@ html, body{
   box-shadow: 0px 0px 5px #60913F;
   padding: 20px 50px;
   font-size: 16px;
+  margin-bottom: 30px;
   .gray-text;
 }
 
@@ -117,13 +121,11 @@ html, body{
   
   .box{
     
-    background: #F1F1F2;  
+    background: @background_color;  
     margin-bottom: 30px;
     text-align: center;
     padding: 20px;
-    
     .rounded(4px);
-    
     .title{
       font-size: 24px;
     }
@@ -132,14 +134,62 @@ html, body{
 }
 
 
+.side-bar{
+  
+  position: relative;
+  
+  .username{
+    
+    font-size: 20px;
+    min-height: 48px;
+    line-height: 48px;
+    font-weight: bold;
+    .blue-text;
+    
+    .image{
+      margin-right: 15px;
+    }
+  }
+  
+  .list{
+    
+    list-style: none;
+    padding: 0px;
+    border-top: 3px solid @border_color;
+    border-bottom: 3px solid @border_color;
+    li{
+      font-size: 20px;
+      a{
+        color: #32302D; 
+        text-decoration: none;
+        padding: 10px; 
+        margin: 5px 0px;
+        display: block;
+        .rounded(4px);
+        &:hover,
+        &.active{
+          color: #007BB4;
+          background: @background_color;
+        }
+      } 
+    }
+  }
+  
+}
+
 /* buttons */
-.btn-primary{
-  background: #FF8A00;
-  border: 1px solid #E3770F;
+
+.btn{
   box-shadow: 0px 1px 0px rgba(255,255,255,.3) inset;
 }
+
+.btn-primary{
+  background: @button_color;
+  border: 1px solid @button_border_color;
+}
+
 .btn-xlg{
-  padding: 20px 30px 15px;
+  padding: 25px 30px 15px;
   .lucky-text;
   font-size: 32px;
 }
