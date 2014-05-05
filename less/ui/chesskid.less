@@ -7,6 +7,9 @@
 /* import icons */
 @import "icons.less";
 
+/* import artworks */
+@import "artworks.less";
+
 
 body {
   
@@ -14,6 +17,8 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top center;
+  min-width: 970px;
+  
 }
 
 html, body{
@@ -39,7 +44,15 @@ html, body{
 .right-text{
   text-align: right;
 }
+.center-text{
+  text-align: center;
+}
 
+/* Reset the container */
+.container {
+  width: 970px;
+  max-width: none !important;
+}
 
 /* header navigation */
 .header{
@@ -66,7 +79,6 @@ html, body{
       
       display: inline-block;
       vertical-align: top;
-      color: #FFF;
       font-size: 26px;
       line-height: 48px;
       margin-top: 22px;
@@ -78,6 +90,12 @@ html, body{
       &:hover{
         cursor:  pointer;
       }
+      
+      a{
+        color: #FFF;
+        text-decoration: none;
+      }
+      
     }
   }
 }
@@ -88,7 +106,7 @@ html, body{
   background: #FFF;
   border-radius: 32px;
   box-shadow: 0px 0px 5px #60913F;
-  padding: 20px 50px;
+  padding: 40px ;
   font-size: 16px;
   margin-bottom: 30px;
   .gray-text;
@@ -99,6 +117,7 @@ html, body{
   .details{
     
     .title{
+      margin-top: 0px;
       .black-text;
     }
     p,
@@ -160,11 +179,13 @@ html, body{
     li{
       font-size: 20px;
       a{
+        
         color: #32302D; 
         text-decoration: none;
         padding: 10px; 
         margin: 5px 0px;
         display: block;
+        
         .rounded(4px);
         &:hover,
         &.active{
@@ -172,6 +193,33 @@ html, body{
           background: @background_color;
         }
       } 
+    }
+  }
+  
+}
+
+
+.tip{
+  
+  border: 2px solid #D0D1D3;
+  .rounded(12px);
+  padding: 30px;
+  box-shadow: 3px 3px 5px #D0D1D3;
+  
+  .title{
+    text-align: center;
+    margin-bottom: 15px;
+    h2{
+      display: inline-block;
+      margin: 0px;
+      .lucky-text;
+      color: #279ED0;
+    }
+    em{
+      display: block;
+      margin-left: 32px;
+      font-style: normal;
+      margin-top: -10px;
     }
   }
   

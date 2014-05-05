@@ -11,6 +11,19 @@
 @button_border_color: #E3770F;
 @background_color: #F1F1F2;
 
+img, .ck-icon, .ck-artwork{
+  -webkit-backface-visibility: hidden;
+  -webkit-transform: translatez(0);
+  -moz-transform: translatez(0);
+  -ms-transform: translatez(0);
+  -o-transform: translatez(0);
+  transform: translatez(0);
+  -webkit-text-size-adjust: none;
+  -moz-text-size-adjust: none;
+  -ms-text-size-adjust: none;
+  -o-text-size-adjust: none;
+  text-size-adjust: none;
+}
 
 /* mixin functions */
 .gradient(@color: #F5F5F5, @start: #EEE, @stop: #FFF) {

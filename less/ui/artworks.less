@@ -1,0 +1,43 @@
+/* chess kid artworks map */
+.ck-artwork{
+
+  background: url("@{image_path}/artwork.sheet.png");
+  background-size: auto 192px;
+  width: 64px;
+  height: 96px;
+  margin: 0px;
+  padding: 0px;
+  display: inline-block;
+  vertical-align: middle;
+  
+  &.artwork-lg{
+    background-size: auto 600px;
+    width: 200px;
+    height: 300px;
+  }
+  
+  /* map positions */
+  &.artwork-learn{
+    background-position: 0px 0px;
+  }
+  &.artwork-beginner{
+    background-position: -64px 0px;
+  }
+  &.artwork-intermediate{
+    background-position: -128px 0px;
+  }
+  &.artwork-advanced{
+    background-position: -192px 0px;
+  }
+  &.artwork-library{
+    background-position: -256px 0px;
+  }
+  &.artwork-move{
+  
+    background-position: 0px -96px;
+    
+    &.artwork-lg{
+      background-position: 0px -300px;
+    }
+  }
+}
