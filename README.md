@@ -1,0 +1,4 @@
+chesskid
+========
+
+Chesskid test project
