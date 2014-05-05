@@ -1,4 +1,4 @@
 chesskid
 ========
 
-Chesskid test project
+Chesskid test project: http://chesskid.pixelrt.com/
